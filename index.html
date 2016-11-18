@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="list-inline command-menu">
+                    <li class="filter" id="green">Green Boxes</li>
+                    <li class="filter" id="blue">Blue Boxes</li>
+                    <li class="filter" id="red">Red Boxes</li>
+                    <li class="sort" data-sort="id" data-method="lowtohigh">Sort: Low to Hight</li>
+                    <li class="sort" data-sort="id" data-method="hightolow">Sort: Hight to Low</li>
+                    <li class="clear-filters">Clear Filters</li>
+                </ul>
+                
+                <div class="search-box">
+                    <input type="search" class="search-bar" placeholder="Search by name">
+                </div>
+            </div>
+            
+            <div class="col-xs-12">
+                <ul class="list-inline active-filters">
+                    
+                </ul>
+            </div>
+            
+            <div class="col-xs-12">
+                <div class="box-container">
+                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box-item red" data-id="4" data-name="Red 2">
+                       <p>Data ID: 4</p>
+                       <p>Data name: Red 2</p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box-item green" data-id="2" data-name="Green 3">
+                       <p>Data ID: 2</p>
+                       <p>Data name: Green 3</p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box-item blue" data-id="7" data-name="Blue 1">
+                       <p>Data ID: 7</p>
+                       <p>Data name: Blue 1</p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box-item blue" data-id="1" data-name="Blue 2">
+                       <p>Data ID: 1</p>
+                       <p>Data name: Blue 2</p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box-item red" data-id="5" data-name="Red 1">
+                       <p>Data ID: 5</p>
+                       <p>Data name: Red 1</p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box-item green" data-id="3" data-name="Green 1">
+                       <p>Data ID: 3</p>
+                       <p>Data name: Green 1</p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 box-item green" data-id="6" data-name="Green 2">
+                       <p>Data ID: 6</p>
+                       <p>Data name: Green 2</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="js/jquery.easysaf.min.js"></script>
+    
+    <script>
+        $(document).ready(function() { 
+            $.EasySAF();
+        })
+    </script>
+  </body>
+</html>
