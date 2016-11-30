@@ -15,7 +15,7 @@ $.EasySAF = function() {
             activeFilters: '',
             activeFiltersHolder: '.active-filters',
 
-            displayNumberOfMatchedElements: false,
+            displayNumberOfMatchedElements: true,
             matchedElementsHolder: '.matched-elements',
             searchBoxResultDelay: 500
         }
@@ -81,14 +81,10 @@ $.EasySAF = function() {
         
         if ( value == '' ) {
             cleanUpFilters();
-        } else {
-            $(saf.item).hide();
         }
 
         checkIfUsingSearchBox(value);
     });
-    
-
 
     function checkNumberOfMatchedItems() {
         var activeItems = 0;
@@ -105,6 +101,7 @@ $.EasySAF = function() {
     function checkIfUsingSearchBox(value) {
         clearTimeout(timeToShow);
         timeToShow = setTimeout(function() {
+            $(saf.item).hide();
 
             if ( saf.displayNumberOfMatchedElements === true ) {
                 var matchedElements = 0;
@@ -128,10 +125,10 @@ $.EasySAF = function() {
     }
 
     function cleanUpFilters() {
+        $(saf.item).show();
         saf.activeFilters = '';
         $(saf.searchBar).val('');
         $(saf.activeFiltersHolder).empty();
         $('i.fa-check').remove();
-        $(saf.item).show();
     }
 }
