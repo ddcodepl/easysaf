@@ -33,8 +33,6 @@ $.EasySAF = function() {
         
         $(saf.item).hide();
         $(saf.item + saf.activeFilters).show();
-        
-        console.log( saf.activeFilters )
     });
     
     $(saf.filterCleaner).click(function() {
@@ -68,11 +66,9 @@ $.EasySAF = function() {
                 if ( $(this).attr('data-name').toLowerCase().indexOf(value) >= 0 ) {
                     $(this).show().css({ 'opacity' : 0 }).animate( { 'opacity' : 1 }, 500 );
                 }
-            })
+            });
         }
-        
-        console.log(value);
-    })
+    });
     
     function cleanUpFilters() {
         saf.activeFilters = '';

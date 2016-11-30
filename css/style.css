@@ -54,6 +54,10 @@ body {
     background: #00FF00;
 }
 
+.box-item.orange {
+    background: #FFA500;
+}
+
 .box-item.blue {
     background: #0000FF;
 }
